@@ -1,6 +1,8 @@
 package models
 
 import (
+	"errors"
+
 	"github.com/artur-sres/golang-event-booking-api/db"
 	"github.com/artur-sres/golang-event-booking-api/utils"
 )
@@ -36,6 +38,24 @@ func (u *User) Save() error {
 		return err
 	}
 	u.ID = userID
+
+	return nil
+}
+
+func (u User) ValidCredencials() error {
+	query := `SELECT password FROM users WHERE email = ?`
+	row := db.DB.QueryRow(query, u.Email)
+
+	var retrievedPassword string
+	err := row.Scan(&retrievedPassword)
+	if err != nil {
+		return err
+	}
+
+	passwordMatch := utils.CheckPasswordHash(u.Password, retrievedPassword)
+	if !passwordMatch {
+		return errors.New("Credentials Invalid.")
+	}
 
 	return nil
 }
