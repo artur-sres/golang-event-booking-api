@@ -1,0 +1,9 @@
+PUT http://localhost:8080/events/4
+Content-Type: application/json
+
+{
+    "title": "festa na casa do rezende",
+    "description": "maior evento de minecraft do ano e do seculo",
+    "location": "casa do ilbs e casa do artur",
+    "DateTime": "2026-09-25T15:30:00Z"
+}

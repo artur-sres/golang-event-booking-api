@@ -2,9 +2,9 @@ POST http://localhost:8080/events
 Content-Type: application/json
 
 {
-    "title": "aniversario do ilbs",
-    "description": "maior evento de brawl stars do ano",
-    "location": "casa do ilbs",
-    "DateTime": "2026-09-25T15:30:00Z"
+    "title": "sla testando aqui",
+    "description": "bom dia",
+    "location": "casa do pedrao",
+    "DateTime": "2029-10-25T15:30:00Z"
 
 }
