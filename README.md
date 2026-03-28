@@ -49,5 +49,5 @@ The API will be avaliable at http://localhost:8080
 | PUT | `/events/:id` | Update an existing event | **Yes** |
 | DELETE | `/events/:id` | Delete an event | **Yes** |
 | POST | `/events/:id/register` | Register for an event | **Yes** |
-| DELETE | `/events/:id/unregister` | Cancel a registration | **Yes** |
+| DELETE | `/events/:id/register` | Cancel a registration | **Yes** |
 
