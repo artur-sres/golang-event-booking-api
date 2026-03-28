@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/artur-sres/golang-event-booking-api/models"
+	"github.com/artur-sres/golang-event-booking-api/utils"
 	"github.com/gin-gonic/gin"
 )
 
@@ -40,5 +41,11 @@ func login(context *gin.Context) {
 		return
 	}
 
-	context.JSON(http.StatusOK, gin.H{"message": "User logged in successfully"})
+	token, err := utils.GenerateToken(user.Email, user.ID)
+	if err != nil {
+		context.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate token"})
+		return
+	}
+
+	context.JSON(http.StatusOK, gin.H{"message": "User logged in successfully", "token": token})
 }
