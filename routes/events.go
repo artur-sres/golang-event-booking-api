@@ -5,7 +5,6 @@ import (
 	"strconv"
 
 	"github.com/artur-sres/golang-event-booking-api/models"
-	"github.com/artur-sres/golang-event-booking-api/utils"
 	"github.com/gin-gonic/gin"
 )
 
@@ -34,23 +33,17 @@ func getEvent(context *gin.Context) {
 }
 
 func createEvent(context *gin.Context) {
-	token := context.Request.Header.Get("Authorization")
-	if token == "" {
-		context.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
-		return
-	}
-
-	userID, err :=utils.VerifyToken(token)
-	if err != nil {
-		context.JSON(http.StatusUnauthorized, gin.H{"error": "Unauthorized"})
-		return
-	}
-
 	var event models.Event
 
-	err = context.ShouldBindJSON(&event)
+	err := context.ShouldBindJSON(&event)
 	if err != nil {
 		context.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request"})
+		return
+	}
+
+	userID := context.GetInt64("userID")
+	if err != nil {
+		context.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve user ID"})
 		return
 	}
 
@@ -114,6 +107,6 @@ func deleteEvent(context *gin.Context) {
 		context.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to delete event"})
 		return
 	}
-	
+
 	context.JSON(http.StatusOK, gin.H{"message": "Event deleted successfully", "event": event})
 }
