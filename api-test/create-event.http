@@ -1,10 +1,10 @@
 POST http://localhost:8080/events
 content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IiIsImV4ZSI6MTc3NDcwODg4NiwidXNlcklEIjoiIn0.QTGLW2nvFlaYfgH99vw-Kld9UiJXTWBMT-XV9HJj2xo
 
 {
     "title": "sla testando aqui",
     "description": "bom dia",
     "location": "casa do pedrao",
     "DateTime": "2029-10-25T15:30:00Z"
-
 }
