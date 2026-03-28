@@ -35,7 +35,7 @@ func login(context *gin.Context) {
 		return
 	}
 
-	err = user.ValidCredencials()
+	err = user.ValidateCredencials()
 	if err != nil {
 		context.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid credentials"})
 		return

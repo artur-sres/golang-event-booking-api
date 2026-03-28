@@ -1,10 +1,10 @@
 POST http://localhost:8080/events
 content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IiIsImV4ZSI6MTc3NDcwODg4NiwidXNlcklEIjoiIn0.QTGLW2nvFlaYfgH99vw-Kld9UiJXTWBMT-XV9HJj2xo
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlbnVtYmVyMkBnbWFpbC5jb20iLCJleGUiOjE3NzQ3MTAxOTIsInVzZXJJRCI6Mn0.PmQkjAxq46qRUidiJ2FEPPmPKuck8LNest5IwOvWWx0
 
 {
-    "title": "sla testando aqui",
-    "description": "bom dia",
+    "title": "sla testando",
+    "description": "amor",
     "location": "casa do pedrao",
     "DateTime": "2029-10-25T15:30:00Z"
 }
