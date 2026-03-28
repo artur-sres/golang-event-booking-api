@@ -1,5 +1,6 @@
-PUT http://localhost:8080/events/4
+PUT http://localhost:8080/events/3
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhlIjoxNzc0NzI2NDI1LCJ1c2VySUQiOjF9.XvPQkLxnr-xDyQBy5vsQI6_0QUdmD6zfIkJ-zwwe79Q
 
 {
     "title": "festa na casa do rezende",

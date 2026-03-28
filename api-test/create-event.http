@@ -1,10 +1,10 @@
 POST http://localhost:8080/events
 content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlbnVtYmVyMkBnbWFpbC5jb20iLCJleGUiOjE3NzQ3MTAxOTIsInVzZXJJRCI6Mn0.PmQkjAxq46qRUidiJ2FEPPmPKuck8LNest5IwOvWWx0
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QzQGdtYWlsLmNvbSIsImV4ZSI6MTc3NDcyNjg0MSwidXNlcklEIjozfQ.E7_Dzd41ohFwItRypzhrkkh-2kZVWsfyGFiG5Coix-M
 
 {
-    "title": "sla testando",
-    "description": "amor",
-    "location": "casa do pedrao",
+    "title": "aniversario do artur",
+    "description": "maior evento de tecnologia do vale do jaguaribe",
+    "location": "universidade federal do ceara, campus de russas",
     "DateTime": "2029-10-25T15:30:00Z"
 }
