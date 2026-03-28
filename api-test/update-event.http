@@ -1,10 +1,10 @@
 PUT http://localhost:8080/events/3
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhlIjoxNzc0NzI2NDI1LCJ1c2VySUQiOjF9.XvPQkLxnr-xDyQBy5vsQI6_0QUdmD6zfIkJ-zwwe79Q
+Authorization: 
 
 {
-    "title": "festa na casa do rezende",
-    "description": "maior evento de minecraft do ano e do seculo",
-    "location": "casa do ilbs e casa do artur",
-    "DateTime": "2026-09-25T15:30:00Z"
+    "title": "test",
+    "description": "test_discription",
+    "location": "test_location",
+    "DateTime": "2026-09-25T15:30:00Z" //random dateTime
 }
