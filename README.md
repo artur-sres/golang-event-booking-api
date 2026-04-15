@@ -1,6 +1,6 @@
 # Event Booking API 
 
-A robust REST API developed in **Go (Golang)** for managing event bookings. This project was built as part of the "Go - The Complete Guide" course, focusing on high-performance backend development, secure authentication, and database persistence.
+A robust REST API developed in **Go (Golang)** for managing event bookings.
 
 ## Features
 - **User Management:** Secure Sign-up and Login system.
