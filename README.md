@@ -23,7 +23,7 @@ A robust REST API developed in **Go (Golang)** for managing event bookings.
 ## Installation and Running
 1. Clone the repository:
    ```bash
-    git clone [https://github.com/artur-sres/golang-event-booking-api.git](https://github.com/artur-sres/golang-event-booking-api.git)
+    git clone https://github.com/artur-sres/golang-event-booking-api.git
 
 2. Navigate to the project directory:
    ```bash
